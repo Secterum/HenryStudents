@@ -19,10 +19,10 @@ return parseInt(num, 2)
 
 
 function DecimalABinario(num) {
-  // tu codigo aca
+  // tu codigo aca 
   return num.toString(2)
 }
-
+//solo restaria intentar hacerlo usando mi propia logica para llegar al resultado
 
 module.exports = {
   BinarioADecimal,
