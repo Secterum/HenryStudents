@@ -18,10 +18,20 @@ return parseInt(num, 2)
 }
 
 
+
 function DecimalABinario(num) {
   // tu codigo aca 
   return num.toString(2)
 }
+/*function D(num) {
+  // tu codigo aca 
+  var res = "";               // declara la variable
+  while (num !== 0) {         // entra un bucle donde solo se rompe cuando num !==0 (no es estrictamente igual a 0)
+    res = num % 2 + res;      // concatena el resto de num divido 2 a la variable res
+    num = Math.floor(num / 2) //usa Math.floor para asegurarse de tener resultado int
+  }
+  return res}
+console.log(D(13))*/
 //solo restaria intentar hacerlo usando mi propia logica para llegar al resultado
 
 module.exports = {
