@@ -7,12 +7,22 @@ seguimos dividiendo el número por dos y capturando su resto hasta que el númer
 Por ejemplo, si tenemos un número 25,
 sigue dividiendo 25 por 2 hasta que obtengamos el cociente menor que 2.*/
 /*let resul = 0
-let numReverse = num.split('').reverse().join('')
+let numReverse = num.toString().split('').reverse().join('')
 for (let i = 0; i < numReverse.length; i++) {                   // ACA SE RESOLVIO SOLO CON LOGICA PROPIA.
     resul += +num[i] * 2 ** (num.length - 1 - i);
 }
 return resul;
 }*/
+/*function BinarioADecimal(num) {
+  let dec = 0;
+  let largo = (num.length-1)
+  for (let i = 0 ; i <= largo ; i++){
+    if ( num[i] == 1){
+      dec = (Math.pow(2, (largo-i)))  + dec
+    } 
+  }
+return dec
+} */
 //LUEGO COMENCE A BUSCAR FORMAS MAS ACOTADAS. Y ENCONTRE DIFERENTES POSIBILIDADES DEL parseInt entre ellas de resolver el ejercicio.
 return parseInt(num, 2)
 }
@@ -25,7 +35,7 @@ function DecimalABinario(num) {
 }
 /*function D(num) {
   // tu codigo aca 
-  var res = "";               // declara la variable
+  let res = "";               // declara la variable
   while (num !== 0) {         // entra un bucle donde solo se rompe cuando num !==0 (no es estrictamente igual a 0)
     res = num % 2 + res;      // concatena el resto de num divido 2 a la variable res
     num = Math.floor(num / 2) //usa Math.floor para asegurarse de tener resultado int
